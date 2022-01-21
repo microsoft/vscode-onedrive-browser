@@ -15,6 +15,9 @@
   ],
   "browser": "./dist/web/extension.js",
   "contributes": {
+		"webOpener": {
+			"scheme": "onedrive"
+		},
     "commands": [
       {
         "command": "onedrive-browser.openOneDrive",
