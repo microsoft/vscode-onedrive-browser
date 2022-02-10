@@ -3,6 +3,7 @@
   "displayName": "OneDrive Browser",
   "description": "Browse and edit files from OneDrive in VS Code",
   "publisher": "ms-vscode",
+  "preview": true,
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.63.0"
