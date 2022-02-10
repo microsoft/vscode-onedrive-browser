@@ -2,6 +2,7 @@
   "name": "onedrive-browser",
   "displayName": "OneDrive Browser",
   "description": "Browse and edit files from OneDrive in VS Code",
+  "publisher": "ms-vscode",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.63.0"
@@ -11,13 +12,14 @@
   ],
   "activationEvents": [
     "onCommand:onedrive-browser.openOneDrive",
-		"onFileSystem:onedrive"
+    "onFileSystem:onedrive"
   ],
   "browser": "./dist/web/extension.js",
   "contributes": {
-		"webOpener": {
-			"scheme": "onedrive"
-		},
+    "webOpener": {
+      "scheme": "onedrive",
+      "import": "webOpener.js"
+    },
     "commands": [
       {
         "command": "onedrive-browser.openOneDrive",
@@ -53,6 +55,6 @@
   },
   "prettier": {
     "printWidth": 100,
-		"singleQuote": true
+    "singleQuote": true
   }
 }
